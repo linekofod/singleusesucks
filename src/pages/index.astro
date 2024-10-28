@@ -22,15 +22,21 @@ import ødelæggelse_af_levesteder from "../assets/images/ødelæggelse_af_leves
     class="flex items-center h-screen w-100 bg-cover bg-top sticky top-0"
     style="background-image: url('/src/assets/images/baggrund.webp')"
   >
-    <h1>Plastik Change</h1>
+    <!-- Hero unit -->
+    <section class="h-screen w-100 flex items-center">
+      <div class="flex flex-col items-center text-center">
+      <h1 id="counter" class="!text-[#024058]">137.000.000,32</h1>
+      <h2 class="!text-[#024058]">tons plastik</h2>
+      <p class="!text-[#024058]">findes i øjeblikket i verdenshavene. Hvert sekund tilføjes yderligere 320 kg fra både landbaserede kilder og aktiviteter til havs. Dette udgør en af de største miljøkriser, vi står overfor.</p>
+      <Button>DONÉR FOR RENERE HAVE</Button>
+    </div>
+    </section>
   </div>
 
   <div
     class="flex flex-col items-center h-full w-100 bg-cover bg-top sticky top-0"
     style="background-image: url('/src/assets/images/mellemgrund2.webp')"
   >
-    <!-- Hero unit -->
-    <section class="h-screen w-100"></section>
 
     <!-- Plastikforurening? -->
     <section class="h-screen w-100"></section>
@@ -48,3 +54,29 @@ import ødelæggelse_af_levesteder from "../assets/images/ødelæggelse_af_leves
     <section class="h-screen w-100"></section>
   </div>
 </MainLayout>
+
+
+  <!-- Nedtælling på hero_unit -->
+<script>
+  // Startværdien
+  let currentCount = 137000000.32;
+
+  // Antal kilo, der skal tilføjes per sekund
+  const increment = 320;
+
+  // Funktion til at opdatere tælleren
+  function updateCounter() {
+    currentCount += increment;
+
+    // Formatér tallet med komma som tusind-separator og to decimaler
+    document.getElementById("counter").innerText = currentCount.toLocaleString("da-DK", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    });
+  }
+
+  // Opdater tælleren hvert sekund
+  setInterval(updateCounter, 1000);
+</script>
+</body>
+</html>
