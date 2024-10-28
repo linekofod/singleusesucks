@@ -18,11 +18,15 @@
 h1,
 h2,
 h3,
-p, figcaption {
+p, span figcaption {
   color: var(--whiteColor);
   font-family: "neulis-sans", sans-serif;
   font-style: normal;
   max-width: 65ch;
+}
+
+span {
+  color: var(--blueColor) !important;
 }
 
 h1 {
