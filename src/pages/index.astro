@@ -64,7 +64,88 @@ import politik from "../assets/images/ikoner/politik_rød.png";
     </section>
 
     <!-- Problemet -->
-    <section id="problemet" class="h-screen w-100"></section>
+    <section>
+      <h2>Plastikforurening er med til at</h2>
+      <div class="overflow-clip">
+        <section id="horisontalscrollsection" class="h-[500vh]">
+          <ul
+            id="horisontalliste"
+            class="list-none pl-0 flex sticky top-[10vh]"
+          >
+            <li
+              class="pl-0 flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+            >
+              <figure class="flex flex-row md:max-w-7xl max-w-xs">
+                <Image
+                  src={skader_dyrelivet}
+                  class="md:max-w-[50vw] md:h-[80vh] h-[50vh] object-cover"
+                  alt="foto"
+                /><figcaption class="pl-4">
+                  Dette fine, lille kamera er et Diana F, der skyder med
+                  120-film.
+                </figcaption>
+              </figure>
+            </li>
+            <li
+              class="flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+            >
+              <figure class="flex flex-row md:max-w-7xl max-w-xs">
+                <Image
+                  src={mikroplast}
+                  class="md:max-w-[50vw] md:h-[80vh] h-[50vh] object-cover"
+                  alt="foto"
+                /><figcaption class="pl-4">
+                  Dette fine, lille kamera er et Diana F, der skyder med
+                  120-film.
+                </figcaption>
+              </figure>
+            </li>
+            <li
+              class="flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+            >
+              <figure class="flex flex-row md:max-w-7xl max-w-xs">
+                <Image
+                  src={klimaforandringer}
+                  class="md:max-w-[50vw] md:h-[80vh] h-[50vh] object-cover"
+                  alt="foto"
+                /><figcaption class="pl-4">
+                  Dette fine, lille kamera er et Diana F, der skyder med
+                  120-film.
+                </figcaption>
+              </figure>
+            </li>
+            <li
+              class="flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+            >
+              <figure class="flex flex-row md:max-w-7xl max-w-xs">
+                <Image
+                  src={ødelæggelse_af_levesteder}
+                  class="md:max-w-[50vw] md:h-[80vh] h-[50vh] object-cover"
+                  alt="foto"
+                /><figcaption class="pl-4">
+                  Dette fine, lille kamera er et Diana F, der skyder med
+                  120-film.
+                </figcaption>
+              </figure>
+            </li>
+            <li
+              class="flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+            >
+              <figure class="flex flex-row md:max-w-7xl max-w-xs">
+                <Image
+                  src={sundhedsfare}
+                  class="md:max-w-[50vw] md:h-[80vh] h-[50vh] object-cover"
+                  alt="foto"
+                /><figcaption class="pl-4">
+                  Dette fine, lille kamera er et Diana F, der skyder med
+                  120-film.
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
 
     <!-- Gør en forskel -->
     <section id="gør-en-forskel" class="h-screen w-full">
@@ -160,8 +241,10 @@ import politik from "../assets/images/ikoner/politik_rød.png";
   </div>
 </MainLayout>
 
-<!-- Nedtælling på hero_unit -->
 <script>
+  import { scroll, animate, inView } from "motion";
+
+  /* Nedtælling på hero_unit */
   // Startværdien
   let currentCount = 137000000.32;
 
@@ -184,4 +267,12 @@ import politik from "../assets/images/ikoner/politik_rød.png";
 
   // Opdater tælleren hvert sekund
   setInterval(updateCounter, 1000);
+
+  /* Horisontal scroll sektion */
+  scroll(
+    animate("#horisontalliste", {
+      transform: ["none", "translateX(-500vw)"],
+    }),
+    { target: document.querySelector("#horisontalscrollsection") }
+  );
 </script>
