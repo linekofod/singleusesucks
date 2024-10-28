@@ -2,11 +2,12 @@
 const { variant = "primary", size = "large" } = Astro.props;
 
 const buttonStyling =
-  "text-[#ff1052] font-['neulis-sans'] font-medium uppercase border border-[#ff1052] rounded transition ease-in";
+  "font-['neulis-sans'] font-medium uppercase border border-[#ff1052] rounded transition ease-in";
 
 const variantClasses = {
-  primary: "hover:bg-[#ff1052] hover:text-[#f5f6f8]",
-  secondary: "hover:bg-[#ff1052] hover:text-[#f5f6f8]",
+  primary: "text-[#ff1052] hover:bg-[#ff1052] hover:text-[#f5f6f8]",
+  secondary:
+    "bg-[#ff1052] text-[#f5f6f8] hover:bg-transparent hover:text-[#ff1052] pl-[30px]",
 };
 
 const sizeClasses = {
