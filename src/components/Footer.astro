@@ -1,6 +1,36 @@
 ---
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo.png";
+import facebook from "../assets/images/facebook.svg";
+import instagram from "../assets/images/instagram.svg";
+import twitter from "../assets/images/twitter.svg";
+import Button from "../components/Button.astro";
 ---
-<div>
-<p>Footer - tilføj footerindhold</p>
-</div>
+
+<section class="flex flex-row h-screen w-full p-8 gap-8">
+    <div class="kolonne_1 w-1/3 flex flex-col items-start">
+      <Image src={logo} alt="Plastic Change logo" class="mb-4"/>
+      <p>Mail: info@plasticchange.org</p>
+      <p>Telefon: +45 42 66 72 46</p>
+      <p>Telefontid: Mandag – Fredag</p>
+      <p>08:00 – 15:00</p>
+    </div>
+    
+    <div class="kolonne_2 w-1/3 flex flex-col items-start">
+      <h3 class="text-lg font-semibold mb-2">Nyhedsbrev</h3>
+      <p>Her kan du tilmelde dig vores nyhedsbrev.</p>
+      <input type="email" name="email" id="email" placeholder="email@email.com" class="border border-[#024058cc] !text-[#024058] rounded px-2 py-1 mt-2 mb-4"/>
+      <Button>TILMELD</Button>
+    </div>
+    
+    <div class="kolonne_3 w-1/3 flex flex-col items-start">
+      <h3 class="text-lg font-semibold mb-2">Sociale medier</h3>
+      <p>Del hvordan du hjælper imod plastikforurening ved at bruge vores hashtag #SingleUseSucks</p>
+      <div class="flex gap-4 mt-4">
+        <Image src={facebook} alt="facebook ikon" class="w-6 h-6"/>
+        <Image src={instagram} alt="instagram ikon" class="w-6 h-6"/>
+        <Image src={twitter} alt="twitter ikon" class="w-6 h-6"/>
+      </div>
+    </div>
+  </section>
   
