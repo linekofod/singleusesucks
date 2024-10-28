@@ -22,6 +22,7 @@ p {
   color: var(--whiteColor);
   font-family: "neulis-sans", sans-serif;
   font-style: normal;
+  max-width: 65ch;
 }
 
 h1 {
