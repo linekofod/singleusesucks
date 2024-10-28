@@ -18,14 +18,14 @@
 h1,
 h2,
 h3,
-p, span figcaption {
+p, span figcaption, label {
   color: var(--whiteColor);
   font-family: "neulis-sans", sans-serif;
   font-style: normal;
   max-width: 65ch;
 }
 
-span {
+span, label {
   color: var(--blueColor) !important;
 }
 
@@ -45,10 +45,19 @@ span {
   font-weight: 500 !important;
 }
 
-p, figcaption {
+p, figcaption, label {
   font-size: 16px !important;
   font-weight: 400 !important;
 }
+
+/* input[type=radio]:checked:before {
+  background: #024058 !important;
+  border-radius: 30px;
+  content: "" !important;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+} */
 
 /* Mobil version */
 @media screen and (max-width: 800px) {
@@ -65,7 +74,7 @@ p, figcaption {
     font-size: 18px !important;
   }
 
-  p, figcaption {
+  p, figcaption, label {
     font-size: 12px !important;
   }
 }
