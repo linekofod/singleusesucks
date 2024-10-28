@@ -8,22 +8,22 @@ import Button from "../components/Button.astro";
 ---
 
 <div
-  class="flex flex-col items-center h-full w-100 bg-cover bg-bottom"
+  class="flex flex-col items-center h-fit w-100 bg-cover bg-bottom"
   style="background-image: url('/src/assets/images/mellemgrund2.webp')"
 >
-<section class="flex flex-col lg:flex-row h-screen w-full p-8 gap-8">
+  <section class="flex flex-col lg:flex-row h-fit w-full p-20 gap-8">
     <div class="kolonne_1 w-full lg:w-1/3 flex flex-col items-start">
       <Image src={logo} alt="Plastic Change logo" class="mb-4" />
       <div class="mb-10 mt-2">
-      <p class="underline">Mail: info@plasticchange.org</p>
-      <p class="underline">Telefon: +45 42 66 72 46</p>
+        <p class="underline">Mail: info@plasticchange.org</p>
+        <p class="underline">Telefon: +45 42 66 72 46</p>
+      </div>
+      <div class="info_2">
+        <p>Telefontid: Mandag – Fredag</p>
+        <p>08:00 – 15:00</p>
+      </div>
     </div>
-    <div class="info_2">
-      <p>Telefontid: Mandag – Fredag</p>
-      <p>08:00 – 15:00</p>
-    </div>
-    </div>
-  
+
     <div class="kolonne_2 w-full lg:w-1/3 flex flex-col items-start">
       <h3 class="text-lg font-semibold mb-4">Nyhedsbrev</h3>
       <p class="mb-4">Her kan du tilmelde dig vores nyhedsbrev</p>
@@ -36,11 +36,12 @@ import Button from "../components/Button.astro";
       />
       <Button class="bg-blue-500 text-white px-4 py-2 rounded">TILMELD</Button>
     </div>
-  
+
     <div class="kolonne_3 w-full lg:w-1/3 flex flex-col items-start">
       <h3 class="text-lg font-semibold mb-3">Sociale medier</h3>
       <p class="mb-3">
-        Del hvordan du hjælper imod plastikforurening ved at bruge vores hashtag #SingleUseSucks
+        Del hvordan du hjælper imod plastikforurening ved at bruge vores hashtag
+        #SingleUseSucks
       </p>
       <div class="flex gap-6 mt-2">
         <svg
