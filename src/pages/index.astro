@@ -15,6 +15,10 @@ import skader_dyrelivet from "../assets/images/skader_dyrelivet.webp";
 import skrald_strand from "../assets/images/skrald_strand.webp";
 import sundhedsfare from "../assets/images/sundhedsfare.webp";
 import ødelæggelse_af_levesteder from "../assets/images/ødelæggelse_af_levesteder.webp";
+import engangsplast from "../assets/images/ikoner/emballage_rød-1.png";
+import genbrug from "../assets/images/ikoner/genbrug_rød.png";
+import mikroplast_ikon from "../assets/images/ikoner/mikroplast_rød.png";
+import politik from "../assets/images/ikoner/politik_rød.png";
 ---
 
 <MainLayout title="Plastic Change">
@@ -49,15 +53,79 @@ import ødelæggelse_af_levesteder from "../assets/images/ødelæggelse_af_leves
     <section class="h-screen w-100"></section>
 
     <!-- Gør en forskel -->
-    <section class="h-screen w-100">
+    <section id="gør-en-forskel" class="h-screen w-full">
       <Banner />
+      <div class="flex justify-center items-center mt-16 mb-4">
+        <h2 class="">Gør en forskel</h2>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-8 pt-16"
+      >
+        <!-- Engangsplast -->
+        <div class="flex flex-col items-center p-6 text-center">
+          <Image src={engangsplast} alt="kop" />
+          <h3 class="mb-4 mt-10 h-16 flex items-center justify-center">
+            Undgå engangsplast
+          </h3>
+          <p class="mt-4">
+            Skift plastposer ud med stofposer og brug genanvendelige
+            vandflasker, kaffekopper og madpakker. Engangsplast står for en stor
+            del af plastikforureningen, da det kun bruges kortvarigt, men har en
+            langvarig miljøpåvirkning.
+          </p>
+        </div>
+
+        <!-- Sorter genbrug -->
+        <div class="flex flex-col items-center p-6 text-center">
+          <Image src={genbrug} alt="kop" />
+          <h3 class="mb-4 mt-6 h-16 flex items-center justify-center">
+            Sortér genbrug
+          </h3>
+          <p class="mt-4">
+            Ved at sortere dit affald korrekt sikrer du, at plast kan
+            genanvendes, og du mindsker mængden af plast, der ender i naturen
+            eller på lossepladser. Støt også systemer, der fremmer genbrug.
+          </p>
+        </div>
+
+        <!-- Begræns mikroplastik -->
+        <div class="flex flex-col items-center p-6 text-center">
+          <Image src={mikroplast_ikon} alt="kop" />
+          <h3 class="mb-4 mt-10 h-16 flex items-center justify-center">
+            Begræns mikroplastik
+          </h3>
+          <p class="mt-4">
+            Vælg kosmetik- og plejeprodukter uden mikroplast, da disse små
+            plastpartikler let ender i vores vandsystemer. Brug vaskeposer, som
+            kan reducere spild af mikroplast fra syntetisk tøj, der frigøres
+            under vask.
+          </p>
+        </div>
+
+        <!-- Støt politisk handling -->
+        <div class="flex flex-col items-center p-6 text-center">
+          <Image src={politik} alt="kop" />
+
+          <h3 class="mb-4 mt-10 h-16 flex items-center justify-center">
+            Støt politisk handling
+          </h3>
+
+          <p class="mt-4">
+            Støt lokale og globale initiativer, der arbejder for at reducere
+            plastikforbrug og affald. Deltag i kampagner eller stem for
+            politikere og love, der adresserer plastikforurening, da lovgivning
+            spiller en vigtig rolle i at skabe systemiske ændringer.
+          </p>
+        </div>
+      </div>
+
+      <!-- Vores indsats -->
+      <section class="h-screen w-100"></section>
+
+      <!-- Merchandise -->
+      <section class="h-screen w-100"></section>
     </section>
-
-    <!-- Vores indsats -->
-    <section class="h-screen w-100"></section>
-
-    <!-- Merchandise -->
-    <section class="h-screen w-100"></section>
   </div>
 </MainLayout>
 
