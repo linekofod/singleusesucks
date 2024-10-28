@@ -1,0 +1,62 @@
+/* Farver */
+
+:root {
+    --whiteColor: #F5F6F8;
+    --blueColor: #024058;
+    --blue80Color: #024058CC;
+    --blue60Color: #02405899;
+    --lightblueColor: #C4DDF2;
+    --lightblue80Color: #C4DDF2CC;
+    --lightblue60Color: #C4DDF299;
+    --pinkColor: #FF1052;
+    --pink80Color: #FF1052CC;
+    --pink60Color: #FF105299;
+}
+
+/* Font styles */
+
+h1, h2, h3, p {
+    color: var(--whiteColor);
+    font-family: "neulis-sans", sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 80px !important;
+    font-weight: 600 !important;
+}
+
+h2 {
+    font-size: 60px !important;
+    font-weight: 500 !important;
+}
+
+h3 {
+    font-size: 30px !important;
+    font-weight: 500 !important;
+}
+
+p {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+
+/* Mobil version */
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 50px !important;
+    }
+    
+    h2 {
+        font-size: 30px !important;
+    }
+    
+    h3 {
+        font-size: 18px !important;
+    }
+    
+    p {
+        font-size: 12px !important;
+    }
+}
