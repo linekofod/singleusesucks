@@ -7,7 +7,7 @@ import logo from "../assets/images/logo.svg";
 ---
 
 <div
-  class="flex items-center h-fit w-100 bg-cover bg-top"
+  class="flex items-center h-fit w-full bg-cover bg-top absolute top-0"
   style="background-image: url('/src/assets/images/baggrund.webp')"
 >
   <div
@@ -24,11 +24,11 @@ import logo from "../assets/images/logo.svg";
         <!-- Desktop menu -->
         <nav id="desktopmenu" class="hidden xl:block">
           <ul class="flex flex-row gap-6">
-            <li><Link href="#">Plastikforurening?</Link></li>
+            <li><Link href="#plastikforurening">Plastikforurening?</Link></li>
             <li><Link href="#problemet">Problemet</Link></li>
-            <li><Link href="#">Gør en forskel</Link></li>
-            <li><Link href="#">Vores indsats</Link></li>
-            <li><Link href="#">Merchandise</Link></li>
+            <li><Link href="#gør_en_forskel">Gør en forskel</Link></li>
+            <li><Link href="#vores_indsats">Vores indsats</Link></li>
+            <li><Link href="#merchandise">Merchandise</Link></li>
           </ul>
         </nav>
 
@@ -105,19 +105,19 @@ import logo from "../assets/images/logo.svg";
     >
       <ul>
         <li class="py-3">
-          <Link href="#" size="small">Plastikforurening?</Link>
+          <Link href="#plastikforurening" size="small">Plastikforurening?</Link>
         </li>
         <li class="py-3">
           <Link href="#problemet" size="small">Problemet</Link>
         </li>
         <li class="py-3">
-          <Link href="#" size="small">Gør en forskel</Link>
+          <Link href="#gør_en_forskel" size="small">Gør en forskel</Link>
         </li>
         <li class="py-3">
-          <Link href="#" size="small">Vores indsats</Link>
+          <Link href="#vores_indsats" size="small">Vores indsats</Link>
         </li>
         <li class="py-3">
-          <Link href="#" size="small">Merchandise</Link>
+          <Link href="#merchandise" size="small">Merchandise</Link>
         </li>
       </ul>
       <div class="button flex items-center relative">

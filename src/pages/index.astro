@@ -82,10 +82,7 @@ import politik from "../assets/images/ikoner/politik_rød.png";
         </div>
 
         <!-- Diagramsektion i højre side -->
-        <div
-          id="my-chart"
-          class="z-10 md:w-1/2 flex flex-col items-center hidden"
-        >
+        <div id="my-chart" class="z-10 md:w-1/2 flex flex-col items-center">
           <div class="w-3/4 max-w-lg mx-auto">
             <div class="flex justify-between items-end h-64 pb-4 gap-4 mb-52">
               <!-- Søjle 1 -->
@@ -289,10 +286,10 @@ import politik from "../assets/images/ikoner/politik_rød.png";
     <section id="problemet" class="h-fit w-100"></section>
 
     <!-- GØR EN FORSKEL -->
-    <section id="gør-en-forskel" class="h-fit w-full mb-36">
+    <section id="gør_en_forskel" class="h-fit w-full mb-20 lg:mb-28 xl:mb-36">
       <Banner />
       <div class="flex justify-center items-center mt-16 mb-4">
-        <h2 class="">Hvordan kan du gøre en forskel?</h2>
+        <h2 class="mx-3">Hvordan kan du gøre en forskel?</h2>
       </div>
 
       <div
@@ -358,7 +355,7 @@ import politik from "../assets/images/ikoner/politik_rød.png";
     </section>
 
     <!-- VORES INDSATS -->
-    <section class="h-fit w-100 mb-36">
+    <section id="vores_indsats" class="h-fit w-100 mb-20 lg:mb-28 xl:mb-36">
       <h2 class="mx-3 mb-2">Vores indsats</h2>
       <div class="md:grid grid-cols-2 xl:grid-cols-4">
         <div class="relative group">
@@ -466,7 +463,8 @@ import politik from "../assets/images/ikoner/politik_rød.png";
 
     <!-- DONÉR -->
     <section
-      class="h-fit w-100 mx-10 mb-36 md:grid grid-cols-[1fr_1fr] gap-10 flex flex-col"
+      id="donér"
+      class="h-fit w-100 mx-10 mb-20 lg:mb-28 xl:mb-36 xl:grid grid-cols-[1fr_1fr] gap-10 flex flex-col"
     >
       <div class="flex flex-col gap-4">
         <h2>Giv dit bidrag</h2>
@@ -481,7 +479,7 @@ import politik from "../assets/images/ikoner/politik_rød.png";
         </div>
       </div>
       <div
-        class="flex flex-col lg:flex-row gap-6"
+        class="flex flex-col md:flex-row gap-6"
         x-data="{ showmedlem: false }"
       >
         <!-- Støt her -->
@@ -662,11 +660,12 @@ import politik from "../assets/images/ikoner/politik_rød.png";
 
     <!-- MERCHANDISE -->
     <section
+      id="merchandise"
       class="flex items-center justify-center h-full w-full bg-cover bg-top py-48"
       style="background-image: url('/src/assets/images/merchandise_bg.webp')"
     >
       <div class="flex flex-col text-center px-4 items-center justify-center">
-        <h2 class="text-2xl font-bold mb-20 !text-[#024058]">
+        <h2 class="text-2xl font-bold mb-5 md:mb-10 !text-[#024058]">
           Støt havet med Hjemhavn
         </h2>
         <p class="mb-6 !text-[#024058]">
