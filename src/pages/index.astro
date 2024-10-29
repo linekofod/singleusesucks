@@ -283,7 +283,118 @@ import politik from "../assets/images/ikoner/politik_rød.png";
     </section>
 
     <!-- PROBLEMET -->
-    <section id="problemet" class="h-fit w-100"></section>
+    <section id="problemet" class="h-fit w-full">
+      <h2>Plastikforurening er med til at</h2>
+      <div class="overflow-clip">
+        <section
+          id="horisontalscrollsection"
+          class="h-[300vh] md:h-[400vh] xl:h-[500vh] mx-10"
+        >
+          <ul id="horisontalliste" class="list-none pl-0 flex sticky top-[5vh]">
+            <li
+              class="pl-0 flex w-[90vw] items-start justify-start flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+            >
+              <figure class="flex flex-col xl:flex-row max-w-[800px]">
+                <Image
+                  src={skader_dyrelivet}
+                  class="h-[70vh] xl:h-[90vh] max-w-xs md:max-w-2xl lg:max-w-3xl xl:max-w-lg object-cover"
+                  alt="foto"
+                />
+                <div class="pt-4 md:pt-8 xl:pl-8 w-[50vw] lg:w-[40vw]">
+                  <h3 class="mb-2 md:mb-3 md:leading-9">Skade dyrelivet</h3>
+                  <figcaption class="">
+                    Dyr, fra fugle til havskildpadder, kan forveksle plastik med
+                    føde og få fat i det. Dette kan føre til kvælning, indre
+                    skader og død.
+                  </figcaption>
+                </div>
+              </figure>
+            </li>
+            <li
+              class="pl-0 flex w-[90vw] items-start justify-start flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+            >
+              <figure class="flex flex-col xl:flex-row max-w-[800px]">
+                <Image
+                  src={mikroplast}
+                  class="h-[70vh] xl:h-[90vh] max-w-xs md:max-w-2xl lg:max-w-3xl xl:max-w-lg object-cover"
+                  alt="foto"
+                />
+                <div class="pt-4 md:pt-8 xl:pl-8 w-[50vw] lg:w-[40vw]">
+                  <h3 class="mb-2 md:mb-3 md:leading-9">
+                    Øge mængden af mikroplast
+                  </h3>
+                  <figcaption class="">
+                    Når plastik fragmenteres, dannes mikroplast, som forurener
+                    havvand og fødekæder. Disse små partikler kan indtages af
+                    marine organismer og påvirke økosystemets sundhed.
+                  </figcaption>
+                </div>
+              </figure>
+            </li>
+            <li
+              class="pl-0 flex w-[90vw] items-start justify-start flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+            >
+              <figure class="flex flex-col xl:flex-row max-w-[800px]">
+                <Image
+                  src={klimaforandringer}
+                  class="h-[70vh] xl:h-[90vh] max-w-xs md:max-w-2xl lg:max-w-3xl xl:max-w-lg object-cover"
+                  alt="foto"
+                />
+                <div class="pt-4 md:pt-8 xl:pl-8 w-[50vw] lg:w-[40vw]">
+                  <h3 class="mb-2 md:mb-3 md:leading-9">
+                    Forværre klimaforandringer
+                  </h3>
+                  <figcaption class="">
+                    Plastproduktion og forbrænding frigiver store mængder
+                    drivhusgasser, hvilket bidrager til klimaforandringer.
+                  </figcaption>
+                </div>
+              </figure>
+            </li>
+            <li
+              class="pl-0 flex w-[90vw] items-start justify-start flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+            >
+              <figure class="flex flex-col xl:flex-row max-w-[800px]">
+                <Image
+                  src={ødelæggelse_af_levesteder}
+                  class="h-[70vh] xl:h-[90vh] max-w-xs md:max-w-2xl lg:max-w-3xl xl:max-w-lg object-cover"
+                  alt="foto"
+                />
+                <div class="pt-4 md:pt-8 xl:pl-8 w-[50vw] lg:w-[40vw]">
+                  <h3 class="mb-2 md:mb-3 md:leading-9">
+                    Ødelægge levesteder for dyrene
+                  </h3>
+                  <figcaption class="">
+                    Plastikaffald kan ødelægge levesteder, især i havet, hvor
+                    det kan skabe giftige zoner og påvirke biodiversiteten.
+                  </figcaption>
+                </div>
+              </figure>
+            </li>
+            <li
+              class="pl-0 flex w-[90vw] items-start justify-start flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+            >
+              <figure class="flex flex-col xl:flex-row max-w-[800px]">
+                <Image
+                  src={sundhedsfare}
+                  class="h-[70vh] xl:h-[90vh] max-w-xs md:max-w-2xl lg:max-w-3xl xl:max-w-lg object-cover"
+                  alt="foto"
+                />
+                <div class="pt-4 md:pt-8 xl:pl-8 w-[50vw] lg:w-[40vw]">
+                  <h3 class="mb-2 md:mb-3 md:leading-9">Skabe sundhedsfare</h3>
+                  <figcaption class="">
+                    Plastikforurening kan føre til sundhedsrisici for mennesker,
+                    da kemikalier fra plast kan sive ind i fødevarer og
+                    drikkevand, hvilket potentielt påvirker hormonbalancen og
+                    generelle helbred.
+                  </figcaption>
+                </div>
+              </figure>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
 
     <!-- GØR EN FORSKEL -->
     <section id="gør_en_forskel" class="h-fit w-full mb-20 lg:mb-28 xl:mb-36">
@@ -712,7 +823,7 @@ import politik from "../assets/images/ikoner/politik_rød.png";
   /* Horisontal scroll sektion */
   scroll(
     animate("#horisontalliste", {
-      transform: ["none", "translateX(-500vw)"],
+      transform: ["none", "translateX(-400vw)"],
     }),
     { target: document.querySelector("#horisontalscrollsection") }
   );
