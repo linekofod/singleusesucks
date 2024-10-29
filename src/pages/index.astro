@@ -22,12 +22,11 @@ import politik from "../assets/images/ikoner/politik_rød.png";
 ---
 
 <MainLayout title="Plastic Change">
-  <!-- <Image src={baggrund} alt="" /> -->
+  <!-- HERO UNIT -->
   <div
     class="flex items-center h-screen w-100 bg-cover bg-top sticky top-0"
     style="background-image: url('/src/assets/images/baggrund.webp')"
   >
-    <!-- HERO UNIT -->
     <section
       class="h-screen w-full flex flex-col items-center justify-center px-4 text-center"
     >
@@ -81,127 +80,200 @@ import politik from "../assets/images/ikoner/politik_rød.png";
             reducere brugen af engangsplastik.
           </p>
         </div>
-    
+
         <!-- Diagramsektion i højre side -->
         <div id="my-chart" class="z-10 md:w-1/2 flex flex-col items-center">
           <div class="w-3/4 max-w-lg mx-auto">
             <div class="flex justify-between items-end h-64 pb-4 gap-4 mb-52">
-
               <!-- Søjle 1 -->
               <div class="flex flex-col items-center w-1/6 -mb-48">
                 <!-- Cirkel med billede -->
-                <div class="w-12 h-12 mb-2 ml-20 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden">
-                  <Image class="w-6 h-8" src={engangsplast} alt="Bygningskonstruktioner ikon" />
+                <div
+                  class="w-12 h-12 mb-2 ml-20 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden"
+                >
+                  <Image
+                    class="w-6 h-8"
+                    src={engangsplast}
+                    alt="Bygningskonstruktioner ikon"
+                  />
                 </div>
-                
+
                 <!-- Procenttallet -->
-                <div class="font-semibold ml-20 text-center mb-1 text-white">3.3%</div>
-                
+                <div class="font-semibold ml-20 text-center mb-1 text-white">
+                  3.3%
+                </div>
+
                 <!-- Søjlen og tekst -->
                 <div class="flex items-center">
                   <p class="-rotate-90 text-smm -mr-6 mt-1">Landbrug</p>
                   <!-- Angiv en fast højde på søjlen -->
-                  <div class="bg-[#C4DDF2] text-center rounded-md -mr-10 mt-10" style="height: 40px; width: 50px;" style="text-[#f5f6f8]"></div>
+                  <div
+                    class="bg-[#C4DDF2] text-center rounded-md -mr-10 mt-10"
+                    style="height: 40px; width: 50px;"
+                    style="text-[#f5f6f8]"
+                  >
+                  </div>
                 </div>
               </div>
-    
+
               <!-- Søjle 2 -->
               <div class="flex flex-col items-center w-1/6 -mb-48">
                 <!-- Cirkel med billede -->
-                <div class="w-12 h-12 mb-2  ml-20 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden">
-                  <Image class="w-6 h-8" src={engangsplast} alt="Bygningskonstruktioner ikon" />
+                <div
+                  class="w-12 h-12 mb-2 ml-20 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden"
+                >
+                  <Image
+                    class="w-6 h-8"
+                    src={engangsplast}
+                    alt="Bygningskonstruktioner ikon"
+                  />
                 </div>
-                
+
                 <!-- Procenttallet -->
-                <div class="font-semibold text-center ml-20 mb-1 text-white">5.8%</div>
-                
+                <div class="font-semibold text-center ml-20 mb-1 text-white">
+                  5.8%
+                </div>
+
                 <!-- Søjlen og tekst -->
                 <div class="flex items-center">
                   <p class="-rotate-90 text-sm -mb-2 -mr-6 mt-10">Elektronik</p>
                   <!-- Angiv en fast højde på søjlen -->
-                  <div class="bg-[#C4DDF2] text-center rounded-md -mr-12 mt-10" style="height: 90px; width: 50px; text-[#f5f6f8]"></div>
+                  <div
+                    class="bg-[#C4DDF2] text-center rounded-md -mr-12 mt-10"
+                    style="height: 90px; width: 50px; text-[#f5f6f8]"
+                  >
+                  </div>
                 </div>
               </div>
-
 
               <!-- Søjle 3 -->
               <div class="flex flex-col items-center w-1/6 -mb-48">
                 <!-- Cirkel med billede -->
-                <div class="w-12 h-12 mb-2  ml-14 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden">
-                  <Image class="w-6 h-8" src={engangsplast} alt="Bygningskonstruktioner ikon" />
+                <div
+                  class="w-12 h-12 mb-2 ml-14 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden"
+                >
+                  <Image
+                    class="w-6 h-8"
+                    src={engangsplast}
+                    alt="Bygningskonstruktioner ikon"
+                  />
                 </div>
-                
+
                 <!-- Procenttallet -->
-                <div class=" ml-14 text-center mb-1 font-semibold text-white">8.9%</div>
-                
+                <div class="ml-14 text-center mb-1 font-semibold text-white">
+                  8.9%
+                </div>
+
                 <!-- Søjlen og tekst -->
                 <div class="flex items-center ml-20">
                   <p class="-rotate-90 text-s -mr-2 mt-32">Biler</p>
                   <!-- Angiv en fast højde på søjlen -->
-                  <div class="bg-[#C4DDF2] text-center rounded-md mr-12 mt-10" style="height: 130px; width: 50px; text-[#f5f6f8]"></div>
+                  <div
+                    class="bg-[#C4DDF2] text-center rounded-md mr-12 mt-10"
+                    style="height: 130px; width: 50px; text-[#f5f6f8]"
+                  >
+                  </div>
                 </div>
               </div>
 
-              
               <!-- Søjle 4 -->
               <div class="flex flex-col items-center w-1/6 -mb-48">
                 <!-- Cirkel med billede -->
-                <div class="w-12 h-12 mb-2 ml-8 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden">
-                  <Image class="w-6 h-8" src={engangsplast} alt="Bygningskonstruktioner ikon" />
+                <div
+                  class="w-12 h-12 mb-2 ml-8 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden"
+                >
+                  <Image
+                    class="w-6 h-8"
+                    src={engangsplast}
+                    alt="Bygningskonstruktioner ikon"
+                  />
                 </div>
-                
+
                 <!-- Procenttallet -->
-                <div class="text-center ml-8 mt-1 mb-0 font-semibold text-white">19.7%</div>
-                
+                <div
+                  class="text-center ml-8 mt-1 mb-0 font-semibold text-white"
+                >
+                  19.7%
+                </div>
+
                 <!-- Søjlen og tekst -->
                 <div class="flex items-center ml-10">
-                  <p class="-rotate-90 text-sm -mr-20 mt-10">Bygningskonstruktioner</p>
+                  <p class="-rotate-90 text-sm -mr-20 mt-10">
+                    Bygningskonstruktioner
+                  </p>
                   <!-- Angiv en fast højde på søjlen -->
-                  <div class="bg-[#C4DDF2] text-center rounded-md mr-24 mt-10" style="height: 190px; width: 50px; text-[#f5f6f8]"></div>
+                  <div
+                    class="bg-[#C4DDF2] text-center rounded-md mr-24 mt-10"
+                    style="height: 190px; width: 50px; text-[#f5f6f8]"
+                  >
+                  </div>
                 </div>
               </div>
-
 
               <!-- Søjle 5 -->
               <div class="flex flex-col items-center w-1/6 -mb-48">
                 <!-- Cirkel med billede -->
-                <div class="w-12 h-12 mb-2 ml-6 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden">
-                  <Image class="w-6 h-8" src={engangsplast} alt="Bygningskonstruktioner ikon" />
+                <div
+                  class="w-12 h-12 mb-2 ml-6 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden"
+                >
+                  <Image
+                    class="w-6 h-8"
+                    src={engangsplast}
+                    alt="Bygningskonstruktioner ikon"
+                  />
                 </div>
-                
+
                 <!-- Procenttallet -->
-                <div class="text-center ml-6  mb-1 font-semibold text-white">22.4%</div>
-                
+                <div class="text-center ml-6 mb-1 font-semibold text-white">
+                  22.4%
+                </div>
+
                 <!-- Søjlen og tekst -->
                 <div class="flex items-center">
                   <p class="-rotate-90 text-sm ml-10 mt-60">Hus</p>
                   <!-- Angiv en fast højde på søjlen -->
-                  <div class="bg-[#C4DDF2] text-center rounded-md mr-10 mt-10" style="height: 240px; width: 50px; text-[#f5f6f8]"></div>
+                  <div
+                    class="bg-[#C4DDF2] text-center rounded-md mr-10 mt-10"
+                    style="height: 240px; width: 50px; text-[#f5f6f8]"
+                  >
+                  </div>
                 </div>
               </div>
-
 
               <!-- Søjle 6 -->
               <div class="flex flex-col items-center w-1/6 mt-28 -mb-48">
                 <!-- Cirkel med billede -->
-                <div class="w-12 h-12 mb-0 rounded-full mr-4 bg-[#C4DDF2] flex items-center justify-center overflow-hidden">
-                  <Image class="w-6 h-8" src={engangsplast} alt="Bygningskonstruktioner ikon" />
+                <div
+                  class="w-12 h-12 mb-0 rounded-full mr-4 bg-[#C4DDF2] flex items-center justify-center overflow-hidden"
+                >
+                  <Image
+                    class="w-6 h-8"
+                    src={engangsplast}
+                    alt="Bygningskonstruktioner ikon"
+                  />
                 </div>
-                
+
                 <!-- Procenttallet -->
-                <div class="text-center mr-4 mt-2 font-semibold text-white">39.9%</div>
-                
+                <div class="text-center mr-4 mt-2 font-semibold text-white">
+                  39.9%
+                </div>
+
                 <!-- Søjlen og tekst -->
                 <div class="flex items-center">
-                  <p class="-rotate-90 text-sm -mr-16 mt-48">Engangsemballage</p>
+                  <p class="-rotate-90 text-sm -mr-16 mt-48">
+                    Engangsemballage
+                  </p>
                   <!-- Angiv en fast højde på søjlen -->
-                  <div class="bg-[#C4DDF2] text-center rounded-md mr-24 mt-10" style="height: 310px; width: 50px; text-[#f5f6f8]"></div>
+                  <div
+                    class="bg-[#C4DDF2] text-center rounded-md mr-24 mt-10"
+                    style="height: 310px; width: 50px; text-[#f5f6f8]"
+                  >
+                  </div>
                 </div>
               </div>
-    
             </div>
           </div>
-    
+
           <!-- Tekst under diagrammet -->
           <h3 class="text-white text-center mt-6 ml-20">
             Sådan fordeler plastikforureningen sig
