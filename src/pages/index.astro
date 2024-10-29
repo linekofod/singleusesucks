@@ -82,7 +82,10 @@ import politik from "../assets/images/ikoner/politik_rød.png";
         </div>
 
         <!-- Diagramsektion i højre side -->
-        <div id="my-chart" class="z-10 md:w-1/2 flex flex-col items-center">
+        <div
+          id="my-chart"
+          class="z-10 md:w-1/2 flex flex-col items-center hidden"
+        >
           <div class="w-3/4 max-w-lg mx-auto">
             <div class="flex justify-between items-end h-64 pb-4 gap-4 mb-52">
               <!-- Søjle 1 -->
@@ -286,7 +289,7 @@ import politik from "../assets/images/ikoner/politik_rød.png";
     <section id="problemet" class="h-fit w-100"></section>
 
     <!-- GØR EN FORSKEL -->
-    <section id="gør-en-forskel" class="h-screen w-full mb-36">
+    <section id="gør-en-forskel" class="h-fit w-full mb-36">
       <Banner />
       <div class="flex justify-center items-center mt-16 mb-4">
         <h2 class="">Hvordan kan du gøre en forskel?</h2>
@@ -355,7 +358,111 @@ import politik from "../assets/images/ikoner/politik_rød.png";
     </section>
 
     <!-- VORES INDSATS -->
-    <section class="h-screen w-100"></section>
+    <section class="h-fit w-100 mb-36">
+      <h2 class="mx-3 mb-2">Vores indsats</h2>
+      <div class="md:grid grid-cols-2 xl:grid-cols-4">
+        <div class="relative group">
+          <Image
+            class="aspect-[4/5] xl:aspect-[4/7] object-cover object-[-340px] opacity-20 xl:opacity-100 group-hover:opacity-20 transition-opacity duration-300"
+            src={politisk_arbejde}
+            alt=""
+          />
+          <div
+            class="absolute bottom-0 p-8 xl:p-4 xl:opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3>Politisk arbejde</h3>
+            <div class="flex flex-col gap-4">
+              <p>
+                En stor prioritet i Plastic Changes arbejde er at påvirke
+                beslutningstagere i Danmark, EU og internationalt i retning af
+                en mere ambitiøs og effektiv lovgivning mod plastikforurening.
+              </p>
+              <p>
+                Initiativer løftet af frivillige, miljøorganisationer og
+                erhvervsliv kan bære os langt, men vi når ikke i mål, uden at de
+                politiske rammevilkår og reguleringen er på plads.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative group">
+          <Image
+            class="aspect-[4/5] xl:aspect-[4/7] object-cover object-[-340px] opacity-20 xl:opacity-100 group-hover:opacity-20 transition-opacity duration-300"
+            src={internationalt_arbejde}
+            alt=""
+          />
+          <div
+            class="absolute bottom-0 p-8 xl:p-4 xl:opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3>World Cleanup Day</h3>
+            <div class="flex flex-col gap-4">
+              <p>
+                Sidste år deltog flere end 15 millioner mennesker fra 190 lande,
+                hvilket gjorde dagen til verdens største civile begivenhed. Det
+                bliver simpelthen ikke større.
+              </p>
+              <p>
+                Tilsammen blev der samlet minimum 60.000 tons affald. I Danmark
+                bliver det 6. år, at verdens største civile aktion finder sted,
+                og selvfølgelig skal det finde sted tværs over hele landet
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative group">
+          <Image
+            class="aspect-[4/5] xl:aspect-[4/7] object-cover object-[-340px] opacity-20 xl:opacity-100 group-hover:opacity-20 transition-opacity duration-300"
+            src={digital_clean_up}
+            alt=""
+          />
+          <div
+            class="absolute bottom-0 p-8 xl:p-4 xl:opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3>Digital Cleanup Day</h3>
+            <div class="flex flex-col gap-4">
+              <p>
+                Digital Cleanup Day er en dag dedikeret til at rydde op i vores
+                digitale liv, ligesom World Cleanup Day gør for det fysiske
+                miljø.
+              </p>
+              <p>
+                Arrangeret af Let's Do It World, har dagen til formål at øge
+                bevidstheden om digital forurening og opfordre til oprydning
+                online.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative group">
+          <Image
+            class="aspect-[4/5] xl:aspect-[4/7] object-cover object-[-340px] opacity-20 xl:opacity-100 group-hover:opacity-20 transition-opacity duration-300"
+            src={skrald_strand}
+            alt=""
+          />
+          <div
+            class="absolute bottom-0 p-8 xl:p-4 xl:opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3>Internationalt arbejde</h3>
+            <div class="flex flex-col gap-4">
+              <p>
+                I Plastic Change arbejder vi ikke kun med plastikforurening
+                herhjemme i Danmark, men vi er også med til at rykke
+                plastiklandskabet på et internationalt niveau. Plastikforurening
+                holder sig ikke indenfor landegrænser, og derfor skal
+                løsningerne findes på tværs af lande.
+              </p>
+              <p>
+                Vi tror på, at problemerne med plastikspild i verden ikke kan
+                løses ved kun at arbejde på nationalt niveau. Vi er nødt til at
+                arbejde på tværs af alle verdens lande og sammen influere de
+                højeste politiske instanser om en grønnere omstilling med mindre
+                engangsplastik og mere genbrug.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- DONÉR -->
     <section
@@ -374,7 +481,7 @@ import politik from "../assets/images/ikoner/politik_rød.png";
         </div>
       </div>
       <div
-        class="flex flex-col md:flex-row gap-6"
+        class="flex flex-col lg:flex-row gap-6"
         x-data="{ showmedlem: false }"
       >
         <!-- Støt her -->
