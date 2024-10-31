@@ -50,6 +50,15 @@ p, figcaption, label {
   font-weight: 400 !important;
 }
 
+/* Andet styling */
+
+.baggrund {
+  background-image: url(/src/assets/images/baggrund.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
 .rotated_text {
   writing-mode: vertical-rl;
   text-orientation: mixed;
