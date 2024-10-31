@@ -30,6 +30,12 @@ import plastik3 from "../assets/images/plastik3.webp";
 import plastik4 from "../assets/images/plastik4.webp";
 import plastik6 from "../assets/images/plastik6.webp";
 import mikroplast2 from "../assets/images/mikroplast2.webp";
+import traktor from "../assets/images/ikoner/traktor_rød.png";
+import elektronik from "../assets/images/ikoner/elektronik_rød.png";
+import biler from "../assets/images/ikoner/bil_rød.png";
+import kran from "../assets/images/ikoner/kran_rød.png";
+import hus from "../assets/images/ikoner/hus_rød.png";
+import emballage from "../assets/images/ikoner/emballage_rød.png";
 ---
 
 <MainLayout title="Plastic Change">
@@ -70,17 +76,17 @@ import mikroplast2 from "../assets/images/mikroplast2.webp";
     <Image
       src={fisk2}
       alt=""
-      class="w-1/5 absolute left-[40%] top-[18%] transform scale-x-[-1] -rotate-45 opacity-70 sway"
+      class="w-1/5 absolute left-[40%] top-[16%] transform scale-x-[-1] -rotate-45 opacity-70 sway"
     />
     <Image
       src={plastik1}
       alt=""
-      class="w-1/5 absolute left-[50%] top-[28%] transform scale-x-[-1] -rotate-45 opacity-70 sway"
+      class="w-1/5 absolute left-[65%] top-[24%] transform scale-x-[-1] -rotate-45 opacity-70 sway"
     />
     <Image
       src={skilpadde1}
       alt=""
-      class="w-1/3 absolute left-[10%] top-[40%] transform scale-x-[-1] -rotate-12 opacity-80 sway"
+      class="w-1/3 absolute left-[10%] top-[35%] transform scale-x-[-1] opacity-80 sway"
     />
     <Image
       src={plastik6}
@@ -99,191 +105,124 @@ import mikroplast2 from "../assets/images/mikroplast2.webp";
     />
 
     <!-- PLASTIKFORURENING? -->
-    <section
-      class="h-fit w-full flex items-center justify-center p-8 mb-20 lg:mb-28 xl:mb-36"
-    >
-      <div
-        class="w-full bg-[#024058] bg-opacity-60 p-8 rounded-lg flex flex-col md:flex-row items-start mt-20 md:mt-32 relative"
-      >
-        <!-- Tekstsektion -->
-        <div class="z-10 w-full md:w-1/2 text-left mb-8 md:mb-0">
-          <h2 class="mb-1 text-[#f5f6f8]">Hvad er</h2>
-          <h2 class="-mt-6 mb-10 text-[#f5f6f8]">plastikforurening?</h2>
-          <p class="mb-10 leading-normal text-[#f5f6f8]">
-            Siden 1950’erne er der produceret over 9 milliarder ton plastik,
-            hvoraf størstedelen er brugt til engangsemballager, der forurener i
-            hele deres livscyklus.
-          </p>
-          <p class="mb-10 leading-normal text-white">
-            Plastikforurening opstår, når plastmaterialer akkumuleres i miljøet
-            og skader økosystemer og dyreliv, da plast sjældent nedbrydes og
-            ofte ender i havet eller på lossepladser. Uden handling forventes
-            plastikproduktionen at fordobles, og forureningen at firedobles de
-            næste 20 år. For at beskytte vores miljø er det derfor afgørende at
-            reducere brugen af engangsplastik.
-          </p>
-        </div>
+    <section class="h-fit max-w-[97vw] mb-20 mt-24 md:mt-40">
+      <div class="bg-[#024058] bg-opacity-60 p-8 md:p-12 lg:p-20 rounded-lg">
+        <div class="xl:grid grid-cols-2">
+          <div class="flex flex-col gap-6">
+            <h2 class="leading-tight">Hvad er plastikforurening?</h2>
+            <div class="flex flex-col gap-5">
+              <p>
+                Siden 1950’erne er der produceret over 9 milliarder ton plastik,
+                hvoraf størstedelen er brugt til engangsemballager, der
+                forurener i hele deres livscyklus.
+              </p>
+              <p>
+                Plastikforurening opstår, når plastmaterialer akkumuleres i
+                miljøet og skader økosystemer og dyreliv, da plast sjældent
+                nedbrydes og ofte ender i havet eller på lossepladser. Uden
+                handling forventes plastikproduktionen at fordobles, og
+                forureningen at firedobles de næste 20 år. For at beskytte vores
+                miljø er det derfor afgørende at reducere brugen af
+                engangsplastik.
+              </p>
+            </div>
+          </div>
 
-        <!-- Diagramsektion -->
-        <div class="flex justify-center py-8 px-4 w-full md:w-1/2">
-          <div
-            id="my-chart"
-            class="z-10 w-full max-w-xs md:max-w-lg flex flex-col items-center justify-center"
-          >
-            <div class="w-full mx-auto">
-              <div class="flex justify-around items-end h-48 pb-4 gap-2 mb-36">
-                <!-- Søjle 1 - Landbrug -->
-                <div class="flex flex-col items-center w-1/6 -mb-32 relative">
-                  <div
-                    class="w-10 h-10 mb-2 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden"
+          <div class="flex flex-col gap-6 items-center">
+            <div class="flex flex-row gap-0 md:gap-5 justify-center">
+              <!-- Søjle 1 -->
+              <div class="flex flex-row items-end">
+                <p class="rotated_text">Landbrug</p>
+                <div class="flex flex-col gap-1 items-center">
+                  <span
+                    class="bg-[#C4DDF2] rounded-full w-10 h-10 md:w-12 md:h-12 mb-1 flex items-center justify-center p-2"
                   >
-                    <img
-                      class="w-5 h-6"
-                      src={engangsplast}
-                      alt="Landbrug ikon"
-                    />
-                  </div>
-                  <div class="font-semibold text-center mb-1 text-white">
-                    3.3%
-                  </div>
-                  <div
-                    class="bg-[#C4DDF2] text-center rounded-md relative"
-                    style="height: 30px; width: 40px;"
-                  >
-                    <p
-                      class="text-xs -rotate-90 absolute left-[-20px] bottom-[-20px] text-center"
-                    >
-                      Landbrug
-                    </p>
-                  </div>
+                    <Image src={traktor} alt="kop" />
+                  </span>
+                  <p class="!font-medium">3.3%</p>
+                  <span
+                    class="bg-[#C4DDF2] w-8 md:w-12 h-12 rounded-md søjle slideup"
+                  ></span>
                 </div>
+              </div>
 
-                <!-- Søjle 2 - Elektronik -->
-                <div class="flex flex-col items-center w-1/6 -mb-32 relative">
-                  <div
-                    class="w-10 h-10 mb-2 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden"
+              <!-- Søjle 2 -->
+              <div class="flex flex-row items-end">
+                <p class="rotated_text">Elektronik</p>
+                <div class="flex flex-col gap-1 items-center">
+                  <span
+                    class="bg-[#C4DDF2] rounded-full w-10 h-10 md:w-12 md:h-12 mb-1 flex items-center justify-center p-2"
                   >
-                    <img
-                      class="w-5 h-6"
-                      src={engangsplast}
-                      alt="Elektronik ikon"
-                    />
-                  </div>
-                  <div class="font-semibold text-center mb-1 text-white">
-                    5.8%
-                  </div>
-                  <div
-                    class="bg-[#C4DDF2] text-center rounded-md relative"
-                    style="height: 70px; width: 40px;"
-                  >
-                    <p
-                      class="text-xs -rotate-90 absolute left-[-20px] bottom-[-20px] text-center"
-                    >
-                      Elektronik
-                    </p>
-                  </div>
+                    <Image src={elektronik} alt="kop" />
+                  </span>
+                  <p class="!font-medium">5.8%</p>
+                  <span class="bg-[#C4DDF2] w-8 md:w-12 h-20 rounded-md søjle"
+                  ></span>
                 </div>
+              </div>
 
-                <!-- Søjle 3 - Biler -->
-                <div class="flex flex-col items-center w-1/6 -mb-32 relative">
-                  <div
-                    class="w-10 h-10 mb-2 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden"
+              <!-- Søjle 3 -->
+              <div class="flex flex-row items-end">
+                <p class="rotated_text">Biler</p>
+                <div class="flex flex-col gap-1 items-center">
+                  <span
+                    class="bg-[#C4DDF2] rounded-full w-10 h-10 md:w-12 md:h-12 mb-1 flex items-center justify-center p-2"
                   >
-                    <img class="w-5 h-6" src={engangsplast} alt="Biler ikon" />
-                  </div>
-                  <div class="font-semibold text-center mb-1 text-white">
-                    8.9%
-                  </div>
-                  <div
-                    class="bg-[#C4DDF2] text-center rounded-md relative"
-                    style="height: 110px; width: 40px;"
-                  >
-                    <p
-                      class="text-xs -rotate-90 absolute left-[-20px] bottom-[-20px] text-center"
-                    >
-                      Biler
-                    </p>
-                  </div>
+                    <Image src={biler} alt="kop" />
+                  </span>
+                  <p class="!font-medium">8.9%</p>
+                  <span class="bg-[#C4DDF2] w-8 md:w-12 h-32 rounded-md søjle"
+                  ></span>
                 </div>
+              </div>
 
-                <!-- Søjle 4 - Bygningskonstruktioner -->
-                <div class="flex flex-col items-center w-1/6 -mb-32 relative">
-                  <div
-                    class="w-10 h-10 mb-2 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden"
+              <!-- Søjle 4 -->
+              <div class="flex flex-row items-end">
+                <p class="rotated_text">Bygningskonstruktioner</p>
+                <div class="flex flex-col gap-1 items-center">
+                  <span
+                    class="bg-[#C4DDF2] rounded-full w-10 h-10 md:w-12 md:h-12 mb-1 flex items-center justify-center p-2"
                   >
-                    <img
-                      class="w-5 h-6"
-                      src={engangsplast}
-                      alt="Bygningskonstruktioner ikon"
-                    />
-                  </div>
-                  <div class="font-semibold text-center mb-1 text-white">
-                    19.7%
-                  </div>
-                  <div
-                    class="bg-[#C4DDF2] text-center rounded-md relative"
-                    style="height: 140px; width: 40px;"
-                  >
-                    <p
-                      class="text-xs -rotate-90 absolute left-[-20px] bottom-[-20px] text-center"
-                    >
-                      Bygningskonstruktioner
-                    </p>
-                  </div>
+                    <Image src={kran} alt="kop" />
+                  </span>
+                  <p class="!font-medium">19.7%</p>
+                  <span class="bg-[#C4DDF2] w-8 md:w-12 h-44 rounded-md søjle"
+                  ></span>
                 </div>
+              </div>
 
-                <!-- Søjle 5 - Hus -->
-                <div class="flex flex-col items-center w-1/6 -mb-32 relative">
-                  <div
-                    class="w-10 h-10 mb-2 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden"
+              <!-- Søjle 5 -->
+              <div class="flex flex-row items-end">
+                <p class="rotated_text">Hus</p>
+                <div class="flex flex-col gap-1 items-center">
+                  <span
+                    class="bg-[#C4DDF2] rounded-full w-10 h-10 md:w-12 md:h-12 mb-1 flex items-center justify-center p-2"
                   >
-                    <img class="w-5 h-6" src={engangsplast} alt="Hus ikon" />
-                  </div>
-                  <div class="font-semibold text-center mb-1 text-white">
-                    22.4%
-                  </div>
-                  <div
-                    class="bg-[#C4DDF2] text-center rounded-md relative"
-                    style="height: 200px; width: 40px;"
-                  >
-                    <p
-                      class="text-xs -rotate-90 absolute left-[-20px] bottom-[-20px] text-center"
-                    >
-                      Hus
-                    </p>
-                  </div>
+                    <Image src={hus} alt="kop" />
+                  </span>
+                  <p class="!font-medium">22.4%</p>
+                  <span class="bg-[#C4DDF2] w-8 md:w-12 h-56 rounded-md søjle"
+                  ></span>
                 </div>
+              </div>
 
-                <!-- Søjle 6 - Engangsemballage -->
-                <div class="flex flex-col items-center w-1/6 -mb-32 relative">
-                  <div
-                    class="w-10 h-10 mb-2 rounded-full bg-[#C4DDF2] flex items-center justify-center overflow-hidden"
+              <!-- Søjle 6 -->
+              <div class="flex flex-row items-end">
+                <p class="rotated_text">Engangsemballage</p>
+                <div class="flex flex-col gap-1 items-center">
+                  <span
+                    class="bg-[#C4DDF2] rounded-full w-10 h-10 md:w-12 md:h-12 mb-1 flex items-center justify-center p-3"
                   >
-                    <img
-                      class="w-5 h-6"
-                      src={engangsplast}
-                      alt="Engangsemballage ikon"
-                    />
-                  </div>
-                  <div class="font-semibold text-center mb-1 text-white">
-                    39.9%
-                  </div>
-                  <div
-                    class="bg-[#C4DDF2] text-center rounded-md relative"
-                    style="height: 250px; width: 40px;"
-                  >
-                    <p
-                      class="text-xs -rotate-90 absolute left-[-20px] bottom-[-20px] text-center"
-                    >
-                      Engangsemballage
-                    </p>
-                  </div>
+                    <Image src={emballage} alt="kop" />
+                  </span>
+                  <p class="!font-medium">39.9%</p>
+                  <span class="bg-[#C4DDF2] w-8 md:w-12 h-64 rounded-md søjle"
+                  ></span>
                 </div>
               </div>
             </div>
-            <h3 class="text-white text-center mt-4 md:mt-0 md:ml-4">
-              Sådan fordeler plastikforureningen sig
-            </h3>
+
+            <h3>Sådan fordeler plastikforurening sig</h3>
           </div>
         </div>
       </div>
@@ -826,6 +765,21 @@ import mikroplast2 from "../assets/images/mikroplast2.webp";
 
   // Opdater tælleren hvert sekund
   setInterval(updateCounter, 1000);
+
+  // InView animationer
+
+  // Søjle animation
+  const slideup = document.querySelector(".slideup");
+
+  inView(slideup, () => {
+    animate(
+      ".søjle",
+      {
+        clipPath: ["inset(100% 0 0 0)", "inset(0% 0 0 0)"],
+      },
+      { duration: 3 }
+    );
+  });
 
   /* Horisontal scroll sektion */
   scroll(

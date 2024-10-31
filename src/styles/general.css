@@ -50,14 +50,10 @@ p, figcaption, label {
   font-weight: 400 !important;
 }
 
-/* input[type=radio]:checked:before {
-  background: #024058 !important;
-  border-radius: 30px;
-  content: "" !important;
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-} */
+.rotated_text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
 
 /* Mobil version */
 @media screen and (max-width: 800px) {
