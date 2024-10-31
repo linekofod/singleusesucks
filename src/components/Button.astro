@@ -12,7 +12,7 @@ const buttonStyling =
 const variantClasses = {
   primary: "text-[#ff1052] hover:bg-[#ff1052] hover:text-[#f5f6f8]",
   secondary:
-    "bg-[#ff1052] text-[#f5f6f8] hover:bg-transparent hover:text-[#ff1052] pl-[30px]",
+    "bg-[#ff1052] text-[#f5f6f8] hover:bg-transparent hover:text-[#ff1052]",
 };
 
 const sizeClasses = {
@@ -27,3 +27,10 @@ const sizeClasses = {
   class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}
   ><slot />
 </a>
+
+<!-- <style>
+  a::before {
+    content: "\f004";
+    font-family: "Font Awesome 6 Free";
+  }
+</style> -->
