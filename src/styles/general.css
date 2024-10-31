@@ -59,6 +59,13 @@ p, figcaption, label {
   background-position: top;
 }
 
+.mellemgrund {
+  background-image: url(/src/assets/images/mellemgrund.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
 .rotated_text {
   writing-mode: vertical-rl;
   text-orientation: mixed;
