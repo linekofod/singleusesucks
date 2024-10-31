@@ -66,6 +66,13 @@ p, figcaption, label {
   background-position: top;
 }
 
+.footer_mellemgrund {
+  background-image: url(/src/assets/images/mellemgrund.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
 .merchandise {
   background-image: url(/src/assets/images/merchandise_bg.webp);
   background-repeat: no-repeat;
